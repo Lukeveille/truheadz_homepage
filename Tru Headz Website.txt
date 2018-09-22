@@ -1,2 +1,0 @@
--Designing a custom Tru Headz CMS
--Sonata? Don't be afraid of open source projects that can be adapted

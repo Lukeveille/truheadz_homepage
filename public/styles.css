@@ -1,0 +1,54 @@
+body, header, main, footer, h1, h2, h3, h4, h5, ul, li {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 2em;
+}
+nav ul {
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main_article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main_article img {
+  grid-row: 1 / span 2;
+}
+.socials div {
+  font-size: 0.5em;
+}
+
+/* aside {
+
+}
+aside form {
+  
+} */
+
+form input, form button {
+  display: inline;
+}
