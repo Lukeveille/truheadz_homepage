@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Tru Headz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--  This link tag includes FontAwesome in the project (fontawesome.io) -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="/styles.css">
     </head>
 
@@ -31,30 +33,19 @@
                     <li>
                         <a href="/">Store</a>
                     </li>
-                    <li>
-                        <div class="socials">
-                            <div class="fb_link">FB</div>
-                            <div class="tw_link">TW</div>
-                            <div class="yt_link">YT</div>
-                            <div class="ig_link">IG</div>
-                        </div>
-                    </li>
                 </ul>
+                <div class="socials">
+                    <a href="https://www.facebook.com/truheadz" class="fa fa-facebook-square"></a>
+                    <a href="https://twitter.com/tru_headz" class="fa fa-twitter-square"></a>
+                    <a href="https://www.youtube.com/channel/UCJZ7qpB17rGqGq4oKsNeGAw" class="fa fa-youtube-square"></a>
+                    <a href="https://www.instagram.com/tru_headz/" class="fa fa-instagram"></a>
+                </div>
             </nav>
         </header>
 
         <main>
-            <section>
-                <article class="main_article">
-                    <img src="" alt="MAIN IMAGE">
-                    <h1>MAIN HEADLINE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis modi molestiae, quas voluptas, ullam facere aliquam temporibus sint corporis voluptatibus omnis iusto nisi nemo cupiditate! Atque inventore culpa laborum accusantium!</p>
-                </article>
-                <article class="sub_article">
-                    <h2>SUB HEADLINE</h2>
-                    <img src="" alt="SUB IMAGE">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium similique tempore laborum nam tenetur ad odio incidunt autem earum. Asperiores iure quod praesentium pariatur numquam cupiditate quasi, ipsum labore vitae.</p>
-                </article>
+            <section class="main_section">
+                <%= yield %>
             </section>
 
             <aside>

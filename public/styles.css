@@ -1,54 +1,128 @@
-body, header, main, footer, h1, h2, h3, h4, h5, ul, li {
+/* Initial styles */
+body, header, footer, h1, h2, h3, h4, h5, ul, li {
   margin: 0;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: url('BGTexture.jpg') center/150% repeat-y;
 }
-
 header {
   text-align: center;
 }
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.3em;
+  margin: 0.2em;
+}
+a {
+  text-decoration: none;
+}
 
-nav li {
-  display: inline-block;
-  font-size: 2em;
+/* Nav */
+nav {
+  position: relative;
+  padding: 0.5em;
+  background-color: #000;
 }
 nav ul {
   padding: 0;
 }
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0 0.8em;
+}
+nav ul {
+  display: inline-block;
+}
+nav .socials {
+  float: right;
+}
 nav a {
-  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  color: #F00;
+}
+.fa {
+  font-size: 1.5em;
 }
 
-.socials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
+/* Main */
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  max-width: 1100px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.40);
+}
+main a {
+  color: black;
+}
+main a:hover {
+  color: #F00;
 }
 
+/* Articles */
+article {
+  margin: 1em;
+  padding: 1em;
+  background-color: #FFF;
+}
 .main_article {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 728px;
 }
 .main_article img {
+  position: absolute;
+}
+.img_fade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+.img_fade:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.img_container {
+  position: relative;
+  display: inline-block;
   grid-row: 1 / span 2;
-}
-.socials div {
-  font-size: 0.5em;
+  height: inherit;
+  overflow: hidden;
 }
 
-/* aside {
+.main_article h1, .main_article p {
+  padding-left: 16px;
+}
+.sub_articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 200px;
+}
+.sub_article {
+  text-align: center;
+}
+.sub_article p {
+  font-size: 0.75em;
+}
+.sub_article .img_fade {
+  top: -4px;
+}
 
+/* Aside */
+aside {
+  position: relative;
+  max-height: 500px;
 }
 aside form {
-  
-} */
-
+  position: absolute;
+  bottom: 0;
+}
 form input, form button {
   display: inline;
 }
